@@ -1,0 +1,6 @@
+Monday	Free	Physics	Free	Free	Gncp	Maths	Bedc-L	Lab
+Tuesday	Bedc	DS-	Lab	Free	Free	Free	Free	Free
+Wednesday	Free	Math_T	Phy_T	Bedc	Free	Ds	Physics	Free
+Thursday	Free	Free	Free	Free	Maths	DS-	Lab	DS-tut
+Friday	Bedc	Bedc_T	DS	Free	Gncp	Maths	Gncp_T	Free
+Saturday	Physics	-LAb	Ds	Physics	Free	Free	Free	Free

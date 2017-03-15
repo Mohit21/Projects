@@ -1,0 +1,10 @@
+http://www.dailyfreecode.com/code/simulate-dictionary-linked-list-2865.aspx
+http://programmingprojects.site50.net/student_record_using_linklist.php
+http://www.programmingspark.com/2013/04/C-program-to-implement-snake-game.html
+http://www.sourcecodeonline.com/details/creating_and_using_custom_attributes_in_c_.html
+http://www.c-sharpcorner.com/uploadfile/mgold/creatingnusingcustomattributesincs12032005055442am/creatingnusingcustomattributesincs.aspx
+http://freecode.com/tags/data-structures
+
+
+
+//date=11-03
