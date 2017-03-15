@@ -1,0 +1,368 @@
+
+<html>
+    <head>
+    <link rel="stylesheet" href="interest.css">
+    <link rel="stylesheet" href="bootstrap3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap3.3.5/css/bootstrap-theme.min.css">
+        <style>
+            #hel1{
+                float:left;
+                margin-left:0px;
+            }
+        </style>
+        <script type="text/javascript">
+    //alert(1);
+        /*(function(){
+        $('input[type="checkbox"]').click(function(){
+            if($(this).prop("checked") == true){
+                alert("Thank you for the Interest Selection.\n\nPlease confirm your Email to continue Further!!");
+            }
+            else if($(this).prop("checked") == false){
+                alert("Please select your Interest to continue!!");
+            }
+        });
+    });*/
+        //alert(1);
+            /*
+        function change(){
+            //alert(1);
+           // var val[];
+            var val1;
+            var val=document.getElementsByName("check").checked;
+            if(val.length>0){
+                val1=checkval(val);
+                //return false;
+            }
+            //alert(val);
+            //return false;
+            if (val1==true) {
+            alert('Thank you for the Interest Selection.\n\nPlease confirm your Email to continue Further!!');
+            return true;    
+        }
+        else if(val1==false){
+            alert('Please select your Interest to continue!!');
+            return false;
+        }
+        }
+        function checkval(val){
+            var i;
+            for(i=0;i<val.length;i++){
+                if(val[i]==true){
+                    return true;
+                    break;
+                }
+            }
+            if(i==(val.length-1)){
+                return false;
+            }
+        }*/
+            
+        function myFunc(){
+            var checks = document.getElementsByName("check");
+            for(var i=0;i<checks.length;i++){
+                if(checks[i].checked==true)
+                    return true;
+            }
+            return false;
+        }
+               
+        </script>
+        <script src="bootstrap3.3.5/js/bootstrap.js"></script>   
+    <link rel="stylesheet" href="bootstrap3.3.5/js/bootstrap.min.js">
+        
+    </head>
+    <body class="element">
+        
+        <%
+            session = request.getSession(false);
+            String email = (String) session.getAttribute("eid");
+            if(session.getAttribute("seid")==null)
+            {request.setAttribute("adderror", "Please signup first");
+        RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
+            }
+        String msg = (String) request.getAttribute("welcome");
+                if (msg != null) {
+                    out.println("<font color=red size=4px>" +msg+ "</font>");
+                }
+        %>
+        
+        
+        <form action="interestselection" method="post" onSubmit="return myFunc()" name="form">
+        <div id="header" style="align-self:center">
+            <div class="box">    
+            <h1 style="font-weight:bolder;color:white"><center> Interest-Selection-Page<br></center></small></h1>
+            </div>
+            <div class="container" id="team">
+            
+                <section>
+                <br><br>
+            <div class="page-header" >
+                <h2 style="font-weight:bolder;color:white">Interest<small style="color:white"> Select the Interests of your choice!</small></h2><br><br>
+            <center>
+            <div class="row">
+  				<div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  				        <div class="panel-body">
+                        <div class="box">  
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\health(1).jpg" width="200" height="195" class="img-responsive" alt="image" style="opacity:1"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black" id="healthtext">Health</center></div>
+                        </div>
+                    </div>
+                                </div>
+                                <br>
+                            <label>
+                        <input type="checkbox" name="check" id="check" value="he1014" ><span style="color:black" >Healthcare</span>
+                        <input type="checkbox" name="check" id="check" value="he1012"><span style="color:black">Disease</span>
+                                 </label>
+  						</div>
+  					</div>
+  				</div>
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\vac(2).jpg" width="200" height="200" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black">Travel</center></div>
+                        </div>
+                    </div>
+                                </div>
+                            <label id="ch3">
+                            	<input type="checkbox" name="check" id="check" value="tr1011"><span style="color:black">Tourism</span>
+                            	<input type="checkbox" name="check" id="check" value="tr1012"><span style="color:black">Business</span>
+                                <input type="checkbox" name="check" id="check" value="tr1013"><span style="color:black">Recreational</span>
+                                <input type="checkbox" name="check" id="check" value="tr1014"><span style="color:black">Asthetic</span>
+                                </label>
+  						</div>
+  					</div>
+  				</div>
+                
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\social(4).jpg" width="200" height="195" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black">Entertainment</center></div>
+                        </div>
+                    </div>
+                                </div>
+                            <label id="ch4">
+                            	<input type="checkbox" name="check" id="check" value="en1015"><span style="color:black">Electronics</span>
+                            	<input type="checkbox" name="check" id="check" value="en1016"><span style="color:black">Gaming</span>
+                                <input type="checkbox" name="check" id="check" value="en1017"><span style="color:black">Leisure</span>
+                                <input type="checkbox" name="check" id="check" value="en1019"><span style="color:black">Music</span>
+                                </label>
+  							</div>
+  					</div>
+  				</div>
+                
+                
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\political(1).jpg" width="200px" height="100px" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black">Politics</center></div>
+                        </div>
+                    </div>
+                                </div>
+                           <label id="ch6">
+                          		<br><br>
+                               <input type="checkbox" name="check" id="check" value="po1015"><span style="color:black">Updates</span>
+                            	<input type="checkbox" name="check" id="check" value="po1016"><span style="color:black">Events</span>
+                            <br><br>    
+                            </label>
+  						</div>
+  					</div>
+  				</div>
+                
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\social(2).jpg" width="200" height="195" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black">Technology</center></div>
+                        </div>
+                    </div>
+                                </div>
+                        <label id="ch7">
+                            <br>
+                                <input type="checkbox" name="check" id="check" value="te1020"><span style="color:black">Innovation</span>
+                            	<input type="checkbox" name="check" id="check" value="te1011"><span style="color:black">Discovery</span>
+                                <input type="checkbox" name="check" id="check" value="te1012"><span style="color:black">Science</span>
+                                </label>
+                        </div>
+  					</div>
+  				</div>
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\business(1).jpg" width="200" height="195" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black">NGO</center></div>
+                        </div>
+                    </div>
+                                </div>
+                            <label id="ch8">
+                                <br><br>
+                                <input type="checkbox" name="check" id="check" value="ng1017"><span style="color:black">Ethical</span>
+                                <br>
+                                <input type="checkbox" name="check" id="check" value="ng1015"><span style="color:black">Social</span>
+                                <br>
+                                <input type="checkbox" name="check" id="check" value="ng1017"><span style="color:black">Religion</span>
+                                <br>
+                                </label>
+                            <br><br>
+  						</div>
+  					</div>
+  				</div>
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\sports(2).jpg" width="200" height="150" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:50px;color:black">Sports</center></div>
+                        </div>
+                    </div>
+                                </div>
+                            <label id="ch2">
+                                <br><br>
+                                <input type="checkbox" name="check" id="check" value="sp1011"><span style="color:black">Cricket</span>
+                            	<input type="checkbox" name="check" id="check" value="sp1012"><span style="color:black">Football</span>
+                                <input type="checkbox" name="check" id="check" value="sp1013"><span style="color:black">Tennis</span>
+                                <input type="checkbox" name="check" id="check" value="sp1015"><span style="color:black">Basketball</span>
+                                <input type="checkbox" name="check" id="check" value="sp1018"><span style="color:black">Hockey</span>
+                         <br>
+                            </label>
+                                
+  						</div>
+  					</div>
+  				</div>
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						
+                        <div class="panel-body">
+                        <div class="box">  
+                            
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\books(1).jpg" width="200" height="195" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:25px;color:black">Arts <br>&<br> Literature</center></div>
+                        </div>
+                    </div>
+                                </div><br><br>
+                            <label id="ch5">
+                                <input type="checkbox" name="check" id="check" value="al1011"><span style="color:black">Writing</span>
+                            	<input type="checkbox" name="check" id="check" value="al1012"><span style="color:black">Reading</span>
+                                <input type="checkbox" name="check" id="check" value="al1016"><span style="color:black">Stories</span>
+                                <input type="checkbox" name="check" id="check" value="al1017"><span style="color:black">Art</span>
+                            </label>
+  						</div>
+  					</div>
+  				</div>
+                
+                <div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+                        <div class="panel-body">
+                        <div class="box">  
+                            <div class="card-container">
+                        <div class="card">
+                            <div class="side"><center><img src="pics1\spiritual(1).jpg" width="200" height="195" class="img-responsive" alt="image"><br><br></center>
+                        </div>
+                            <div class="side back"><center style="font-size:25px;color:black">Spritual <br>&<br> Devotional</center></div>
+                        </div>
+                    </div>
+                                </div>
+                            <label id="ch9">
+                                <br><br><br><br>
+                                <input type="checkbox" name="check" id="check" value="sd1011"><span style="color:black">Hinduism</span>
+                                <input type="checkbox" name="check" id="check" value="sp1016"><span style="color:black">Islam</span>
+                                <input type="checkbox" name="check" id="check" value="sd1014"><span style="color:black">Jainism</span>
+                                <input type="checkbox" name="check" id="check" value="sd1013"><span style="color:black">Sikhism</span>
+                                <input type="checkbox" name="check" id="check" value="sd1015"><span style="color:black">Buddhism</span>
+                            <br><br>    
+                            </label>
+  					         	
+                        </div>
+  					</div>
+  				</div>
+                
+              <input type="reset" value="Reset" id="bt1"/>
+              <input type="submit" value="Submit" id="bt2"/>
+                </div><!-- end row -->
+                </section></center>
+              
+              </form>
+            <!--    <div id="fun">
+                <label>
+                    <input type="checkbox" name="check1">I1
+                    <input type="checkbox" name="check1">I2
+                    <input type="checkbox" name="check1">I3
+                    <input type="checkbox" name="check1">I4
+                    <input type="checkbox" name="check1">I5
+                    </label>
+                    
+                </div>
+-->                
+                          
+	</div>
+        
+        <footer>
+      <hr>
+        <center>
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/Beinglimitless">Twitter</a></li>
+          <li><a href="http://www.facebook.com/Beinglimitless">Facebook</a></li>
+          <li><a href="http://www.youtube.com/Beinglimitless">YouTube</a></li>
+          <li><a href="http://www.instagram.com/Beinglimitless">Instagram</a></li>
+                  
+        </ul>
+        
+        <p style="color:white">&copy; Copyright @ Being Limitless</p>
+        </center>
+      <!-- end Container-->
+      </div>
+
+    </footer>
+        
+    </body>       
+</html>

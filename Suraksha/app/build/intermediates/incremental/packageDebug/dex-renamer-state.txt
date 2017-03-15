@@ -1,0 +1,7 @@
+#Wed Mar 15 13:40:55 IST 2017
+base.0=C\:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_97c885f1689e03478f6f85a9daf98890567bda57
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b2bb6157635e23154a9cfc21d6e7c8406df109af\\classes.dex
+base.1=C\:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b2bb6157635e23154a9cfc21d6e7c8406df109af
+file.0=C\:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_97c885f1689e03478f6f85a9daf98890567bda57\\classes.dex

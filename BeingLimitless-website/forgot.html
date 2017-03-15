@@ -1,0 +1,81 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <link rel="stylesheet" href="forgot.css">
+           <style>
+                a:visited{
+                color:darkred;
+            }
+            a:link{
+                color:white;
+            }
+            a:hover{
+                color:crimson;
+            }
+            </style>
+        <script>
+            
+var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i; 
+
+function getAge(dateString) 
+{
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+    {
+        age--;
+    }
+    return age;
+}            
+function validate(form){
+var email=form.email.value;
+var dob1=form.dob.value;
+var age1=getAge(dob1);
+var errors=[];    
+if (!ck_email.test(email)) {
+    errors[errors.length] = "You must enter a valid email address.";
+ }
+if(age1<13 && age1>=0){
+    errors[errors.length] = "Minimum 13 years of age to Join us";
+}
+if(age1<0){
+    errors[errors.length] = "Invalid Date!!!";
+}
+if (errors.length > 0) {
+  reportErrors(errors);
+  return false;
+ }
+  return true;
+}
+function reportErrors(errors){
+ var msg = "Please Enter Valid Data...\n";
+ for (var i = 0; i<errors.length; i++) {
+ var numError = i + 1;
+  msg += "\n" + numError + ". " + errors[i];
+}
+ alert(msg);
+}
+        </script>
+            </head>
+        <body>
+    <div id="contain-login">
+        <div id="content">
+            <header>
+                <center>Password-Reset</center>
+            </header>
+        <form action="http://signinuser" target="_blank"  id="formL1" name="form" onSubmit="return validate(this)">
+            <br><br><br><br>
+            Email-ID:<input type="email" title="Email must not be blank and sholud be of proper Format" name="email"  id="email11" placeholder="abcd@xyz.com" style="margin-left:21.5px;width:170px;height:20px" required> <span style="color:red;padding-left:9px">*</span><br><br><br><br>
+            D-O-B :<input type="date" name="dob" style="margin-left:33px;height:23px;width:170px" required><span style="color:red;padding-left:9px">*</span>
+            <br><br><br><br><br>
+            <input type="submit"  id="submit1" style="margin-right:0px;;margin-bottom:20px;float:right">
+            <br><br><br><br>
+            <p><center>* Fields are mandatory</center></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

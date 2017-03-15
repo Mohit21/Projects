@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\setting.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\setting.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_main.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_main.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_launcher.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_drawer.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_drawer.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\main1.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\main1.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_credits.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_credits.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\update.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\update.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_info.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_info.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_update.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_update.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\contact.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\contact.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_settings.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_logout.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\ic_logout.png"
+    },
+    {
+        "merged": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\welcome.png",
+        "source": "C:\\Users\\mkthe\\StudioProjects\\Suraksha\\app\\src\\main\\res\\drawable-ldpi\\welcome.png"
+    }
+]

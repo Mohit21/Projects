@@ -1,0 +1,174 @@
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+        
+html{
+    -webkit-font-smoothing: antialiased;
+}
+
+.element {
+  animation: pulse 30s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  50% {
+    background-color: #FF4136;
+  }
+100% {
+    background-color: #001F3F;
+  }
+}
+
+#bt2 {
+    border: 0;
+    background: #0087cc;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin-right:100px;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+}
+#bt2:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+
+#bt1 {
+    border: 0;
+    background: #0087cc;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin-right:50px;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+}
+#bt1:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+ 
+.container1{
+opacity: 0.8;
+    
+}
+
+ #header{
+            background-color: black;
+            color:azure;
+            width:100%;
+            height:90px;
+            padding-top:10px;
+			padding-bottom:10px;
+        	margin-top:50px;
+			margin-bottom:10px;
+ }
+header,footer{
+    display:block;
+}
+
+body{
+    background-color: darkgray;
+}
+
+label{
+    cursor: pointer;
+    color:#666
+    input[type="checkbox"]; 
+    display:none; 
+    + .label-text:before
+    content:"\f096";
+    font-family:"FontAwesome";
+    speak:none;
+    font-style:normal;
+    font-weight:normal;
+    font-variation:normal;
+    font-transform:none;
+    line-hieght:1;
+    -webkit-font-smoothing:antialiased;
+    width:1em;
+    
+    &:checked + .label-text:before
+        content:"\f14a";
+        color:#06a3e9;
+    &:disabled + .label-text:before
+    content:"\f0cB";
+    color:#ccc;
+}
+
+#fun{
+    position: absolute;
+    margin-left:0px;
+    width:88%;
+    height:90%;
+    background: red;
+    top: 35%;
+    opacity:0;
+}
+
+#container{
+    margin-top:0px;
+    width:300px;
+    height:auto;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+
+.card-container {
+  height: 110px;
+  position: relative;
+  width: 100%;
+    margin-bottom:20px;
+}
+
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+    margin-bottom:20px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+input #check{
+    color:black;
+    
+}
+.card .side {
+    margin-top:2px;
+    margin-bottom:2px;
+  backface-visibility: hidden;
+  height: 95%;
+  position: absolute;
+  width: 100%;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.box img {
+  border-radius: 5px;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+}
+
+.box img:hover {
+        border-radius: 50%;
+}

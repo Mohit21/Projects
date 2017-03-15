@@ -1,0 +1,86 @@
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+        
+html{
+    -webkit-font-smoothing: antialiased;
+}
+
+.container1{
+opacity: 0.8;
+    
+}
+
+.element {
+  animation: pulse 30s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  50% {
+    background-color: #FF4136;
+  }
+100% {
+    background-color: #001F3F;
+  }
+}
+
+.side{
+    float:left;
+    
+}
+header,footer{
+    display:block;
+}
+
+body{
+    background-color: darkgray;
+}
+
+.col-sm-4{
+    width:100%;
+}
+label{
+    cursor: pointer;
+    color:#666
+    input[type="checkbox"]; 
+    display:none; 
+    + .label-text:before
+    content:"\f096";
+    font-family:"FontAwesome";
+    speak:none;
+    font-style:normal;
+    font-weight:normal;
+    font-variation:normal;
+    font-transform:none;
+    line-hieght:1;
+    -webkit-font-smoothing:antialiased;
+    width:1em;
+    
+    &:checked + .label-text:before
+        content:"\f14a";
+        color:#06a3e9;
+    &:disabled + .label-text:before
+    content:"\f0cB";
+    color:#ccc;
+}
+
+#fun{
+    position: absolute;
+    margin-left:0px;
+    width:88%;
+    height:90%;
+    background: red;
+    top: 35%;
+    opacity:0;
+}
+
+#container{
+    margin-top:0px;
+    width:300px;
+    height:auto;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+

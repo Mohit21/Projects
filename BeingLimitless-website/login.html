@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <link rel="stylesheet" href="loginstyle.css">
+        
+        <script type="text/javascript">
+var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i; 
+var errors = [];
+function validate(form){
+var email = form.lemail.value;
+ if (!ck_email.test(email)) {
+  errors[errors.length] = "You must enter a valid email address.";
+ }
+ if (errors.length > 0){
+     reportErrors(errors);
+     return false;
+ }
+  return true;
+}
+function reportErrors(errors){
+ var msg = "Please Enter Valid Data...\n";
+ for (var i = 0; i<errors.length; i++) {
+ var numError = i + 1;
+  msg += "\n" + numError + ". " + errors[i];
+}
+ alert(msg);
+}
+</script>
+        <style>
+            a:visited{
+                color:white;
+            }
+            a:link{
+                color:white;
+            }
+            a:hover{
+                color:crimson;
+            }
+            </style>
+        </head>
+        <body>
+    <div id="contain-login">
+        <div id="content">
+            <header>
+                <center>Secure-Login</center>
+            </header>
+        <form action="http://signinuser" target="_blank"  name="form" id="formL1" onSubmit="return validate(this)">
+            Email ID :<input type="email" id="emialL" title="Email must not be blank and contain proper email" name="lemail" placeholder="abcd@xyz.com" style="margin-top:70px;margin-left:15px;height:25px" minautofocus required><span style="color:red;padding-left:10px">*</span><br><br><br>
+            Password :<input type="password" id="pwdL" title="Password must contain at between 6-16 characters, including UPPER/lowercase and numbers." name="lpass" placeholder="Password" style="margin-left:11px;height:23px" required><span style="color:red;padding-left:9px">*</span>
+            <a href="forgot.html" style="margin-right:40px;;margin-bottom:20px;float:right"><br>forgot-password?</a>
+            <br><br><br><br><br>
+            <input type="submit"  style="margin-right:0px;;margin-bottom:20px;float:right" value="Login" id="button">
+            <br><br><br><br>
+            <p><center>* Fields are mandatory</center></p>
+            
+            </form>
+            
+        </div>
+    </div>
+
+</body>
+</html>

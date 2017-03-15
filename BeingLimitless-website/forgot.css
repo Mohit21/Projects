@@ -1,0 +1,95 @@
+html{
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    opacity:1; 
+    background-size:auto;
+    background-image:url("pics1/login1.jpg");
+    background-origin: border-box;
+    background-repeat: no-repeat; 
+    background-position:left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#form{
+    color:azure;
+    font-family:sans-serif; 
+    margin-right:50px;
+   
+}
+
+#contain-login #content{
+    margin-left:50px;
+    margin-right:0px;
+    color:azure;
+
+}
+#contain-login #content header{
+    color:azure;
+    padding-top:10px;
+    magin-left:50px;
+    text-align:center;
+    font-size:30px;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    
+    /*text-shadow: ;*/
+}
+
+#contain-login #content header:hover{
+    color:beige;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    /*text-shadow: ;*/
+}
+
+#submit1 {
+    border: 0;
+    background: #0087cc;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin-right:100px;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+}
+#submit1:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+#contain-login{
+    -webkit-webkit-transition:all is ease;
+    -moz-webkit-transition:all is ease;
+    -ns-webkit-transition:all is ease;
+    -o-webkit-transition:all is ease;
+    transition:all is ease;
+    box-shadow:-5px -5px 15px 15px rgba(255,255,255,.25);
+    box-decoration-break: inertial;
+    box-sizing: border-box; 
+    left:0px;
+    margin:0px auto;
+    margin-top:75px;
+    margin-left:700px;
+    magin-right:100px;
+    width:450px;
+    height:450px;
+    padding-bottom:10px;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:100px;
+
+    
+    /*opacity:0.6;
+    background-color: black;
+    border-right:thick  solid #000000;
+    border-left:thick  solid #000000;
+    border-top:thick  solid #000000;
+    border-bottom:thick  solid #000000;*/
+}

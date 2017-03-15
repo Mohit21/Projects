@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="wrap_content" android:layout_width="fill_parent"
+    android:id="@+id/scrollView1" 
+    android:background="@drawable/welcome"
+    android:scaleType="matrix"
+    xmlns:tools="http://schemas.android.com/tools" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    tools:context="com.example.suraksha.Help" >
+ 	
+ 	<LinearLayout 
+ 	    android:layout_height="fill_parent" 
+ 	    android:layout_width="fill_parent" 
+ 	    android:orientation="vertical" 
+ 	    android:layout_marginLeft="16dp" 
+ 	    android:gravity="center_horizontal" 
+ 	    android:layout_marginBottom="10dp" 
+ 	    android:layout_marginRight="10dp" 
+ 	    android:layout_marginTop="0dp">
+
+	<TextView 
+	    android:layout_height="35dp" 
+	    android:layout_width="140dp"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:text="Help Screen "
+	    android:background="@layout/border"
+	    android:textStyle="bold"
+	    android:textSize="20sp"
+	    android:textColor="#000000"
+		android:gravity="center"
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="20dp" />
+
+		<TextView
+			android:id="@+id/info"
+			android:layout_width="match_parent"
+			android:background="@layout/border"
+			android:layout_height="150dp"
+			android:layout_marginTop="30dp"
+			android:gravity="center"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:textSize="15sp"
+			android:maxLines="8"
+			android:text="SuRaksha is an Initaitive, created to cater to the rising need of an efficient safety Application for Women.\nWith just two Simple Clicks, you have the previlege to let your Guardians know about your current Location during your time of Need."
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/info1"
+			android:layout_width="match_parent"
+			android:background="@layout/border"
+			android:layout_height="54dp"
+			android:layout_marginTop="10dp"
+			android:gravity="center"
+			android:paddingLeft="15dp"
+			android:paddingRight="5dp"
+			android:textStyle="bold"
+			android:textSize="14dp"
+			android:text="Be Safe and Be Fearless is the moto of this App"
+			android:textColor="#000000" />
+
+		<ImageView
+			android:layout_height="200dp"
+			android:layout_width="match_parent"
+			android:background="@drawable/drawershow"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="40dp"/>
+	<TextView
+	    android:layout_width="match_parent"
+	    android:background="@layout/border"
+	    android:layout_height="85dp"
+	    android:paddingTop="10dp"
+		android:layout_marginTop="15dp"
+		android:gravity="center"
+	    android:textSize="14sp"
+		android:textStyle="bold"
+	    android:text="Tap on the Top-Left part of the Screen to access the Navigation Drawer.This Application can be Accessed by the Drawer only."
+	    android:textColor="#000000" />
+
+		<ImageView
+			android:layout_height="400dp"
+			android:layout_width="match_parent"
+			android:background="@drawable/main1"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="48dp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:background="@layout/border"
+			android:layout_height="100dp"
+			android:layout_marginTop="15dp"
+			android:gravity="center"
+			android:paddingTop="10dp"
+			android:textStyle="bold"
+			android:textSize="14dp"
+			android:text="This is the Main Screen,tapping on the Panic Button will trigger the panic mode and message containing your location will be sent to at most 5 Gauridians."
+			android:textColor="#000000" />
+
+		<ImageView
+			android:layout_height="400dp"
+			android:layout_width="match_parent"
+			android:background="@drawable/setting"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="48dp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:background="@layout/border"
+			android:layout_height="100dp"
+			android:layout_marginTop="15dp"
+			android:gravity="center"
+			android:paddingTop="10dp"
+			android:textStyle="bold"
+			android:textSize="14dp"
+			android:text="This is the Settings screen where you can see your details.You can click on the Update button to make changes to your details as per your preference."
+			android:textColor="#000000" />
+
+		<ImageView
+			android:layout_height="400dp"
+			android:layout_width="match_parent"
+			android:background="@drawable/update"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="48dp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:background="@layout/border"
+			android:layout_height="70dp"
+			android:layout_marginTop="15dp"
+			android:gravity="center"
+			android:paddingTop="10dp"
+			android:textStyle="bold"
+			android:textSize="14dp"
+			android:text="The Update screen helps you to make changes to your Details."
+			android:textColor="#000000" />
+	</LinearLayout>
+
+	</ScrollView>
+

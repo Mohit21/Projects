@@ -1,0 +1,249 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login/Sign-Up Page</title>
+        <link rel="stylesheet" href="loginstyle.css">
+        <style>
+            a:visited{
+                color:darkred;
+            }
+            a:link{
+                color:white;
+            }
+            a:hover{
+                color:crimson;
+            }
+            a{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+<body>
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="span6">
+                <div class="area">
+                    <form class="form-horizontal">
+                        <div class="heading">
+                            <h4 class="form-heading">Sign In</h4>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputCompanyName">Company Name</label>
+
+                            <div class="controls">
+                                <input id="inputCompanyName" placeholder=
+                                "E.g. Some Software Pvt. Ltd." type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputUsername">Username</label>
+
+                            <div class="controls">
+                                <input id="inputUsername" placeholder=
+                                "E.g. ashwinhegde" type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputPassword">Password</label>
+
+                            <div class="controls">
+                                <input id="inputPassword" placeholder=
+                                "Min. 8 Characters" type="password">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls">
+                                <label class="checkbox"><input type="checkbox">
+                                Keep me signed in ¦ <a class="btn btn-link"
+                                href="#">Forgot my password</a></label>
+                                <button class="btn btn-success" type=
+                                "submit">Sign In</button> <button class="btn"
+                                type="button">Help</button>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-error">
+                            <button class="close" data-dismiss="alert" type=
+                            "button">×</button> <strong>Access Denied!</strong>
+                            Please provide valid authorization.
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="span6">
+                <div class="area">
+                    <form class="form-horizontal">
+                        <div class="heading">
+                            <h4 class="form-heading">Sign Up</h4>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputCompanyName">Company Name</label>
+
+                            <div class="controls">
+                                <input id="inputCompanyName" placeholder=
+                                "E.g. Some Software Pvt. Ltd." type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="inputFirst">First
+                            Name</label>
+
+                            <div class="controls">
+                                <input id="inputFirst" placeholder=
+                                "E.g. Ashwin" type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="inputLast">Last
+                            Name</label>
+
+                            <div class="controls">
+                                <input id="inputLast" placeholder="E.g. Hegde"
+                                type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputEmail">Email</label>
+
+                            <div class="controls">
+                                <input id="inputEmail" placeholder=
+                                "E.g. ashwinh@cybage.com" type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputUser">Username</label>
+
+                            <div class="controls">
+                                <input id="inputUser" placeholder=
+                                "E.g. ashwinhegde" type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for=
+                            "inputPassword">Password</label>
+
+                            <div class="controls">
+                                <input id="inputPassword" placeholder=
+                                "Min. 8 Characters" type="password">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls">
+                                <label class="checkbox"><input type="checkbox">
+                                I agree all your <a href="#">Terms of
+                                Services</a></label> <button class=
+                                "btn btn-success" type="submit">Sign
+                                Up</button> <button class="btn" type=
+                                "button">Help</button>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <button class="close" data-dismiss="alert" type=
+                            "button">×</button> <strong>Confirmation:</strong>
+                            A confirmation email has been sent to your
+                            email.<br>
+                            Thank you for your registration.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login/Sign-Up Page</title>
+        <link rel="stylesheet" href="loginstyle.css">
+        <style>
+            a:visited{
+                color:darkred;
+            }
+            a:link{
+                color:white;
+            }
+            a:hover{
+                color:crimson;
+            }
+            a{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body id="bd" style="">
+        <div id="header">
+            <center><h1>SIGN-UP/LOGIN</h1></center>
+        </div>    
+        <div id="section">
+            <form name="signup" action="login.html" method="post">
+                
+                <b><u>Sign-Up</u></b>
+                    <pre><hr>
+    Firstname:       <input type="text" name="fname" placeholder="First Name" width="10"><br>
+    Surname:         <input type="text" name="lname" placeholder="Last Name" width="10"><br>
+    Gender:          <input type="radio" name="sex" value="male" checked>Male   <input type="radio" name="sex" value="male" checked>Female<br>
+    Username:        <input type="text" name="username" placeholder="Username"><span style="color:red">*</span><br>
+    Email:           <input type="email" name="email" placeholder="abcd@gamil.com" required autofocus><span style="color:red">*</span><br>
+    Password:        <input type="password" name="password" placeholder="Password" required><span style="color:red">* <br>
+                     The password should contain 
+                     (@,$,2,3,w,q,A,D)</span><br>
+    Confirm Password:<input type="password" name="cpassword" placeholder="Confirm Password"><span style="color:red">*</span><br>
+    Date of Birth:   <input type="date" name="date" placeholder="DOB"><br>
+    Profession:      <input type="text" name="profession" placeholder="Profession"><br>
+    Country:         <input type="text" name="country" placeholder="Country"><br>   
+    Contact:         <input type="tel" name="contact" placeholder="Contact"><span style="color:red">*</span><br><hr>
+                <button type="button">Reset</button>   <button type="button">Sign-in</button></pre>
+            </form>
+        
+        </div>
+        <div id="aside">
+            <form name="signup" method="post">
+            <b><u>Login</u></b>
+        <pre>
+        <br><hr>
+                    Username:<input type="email" name="email" placeholder="Username"><span style="color:red">*</span><br>
+        <br>
+                    Password:<input type="password" name="password" placeholder="Password"><span style="color:red">*</span><br>
+                        <!--<a href="forgotpassword.html">forgot-passowrd?</a>-->
+        <br><hr>
+                                <a href="forgotpassword.html">forgot-passowrd?</a>  <button type="button">Login</button>     
+            </pre>
+        </form>
+        </div>
+        <div class="footer">
+            Copyright © beinglimitless.com
+                <a href="contact.html" target="_blank" style="float:left">Contact Us</a> <a href="about.html.html" target="_blank" style="float:left">About</a> 
+                <a href="privacy.html" target="_blank" style="float:right">Privacy-Policy</a>  
+                <a href="trems&conditions.html" target="_blank" style="float:right">Terms and Conditions</a>
+            
+        </div>
+    </body>
+</html>

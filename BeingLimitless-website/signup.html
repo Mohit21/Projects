@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="signup.css">
+        <!--<link rel="text/javascript" href="signupValidate.js">-->
+        
+<script type="text/javascript">
+
+    
+var ck_name =/(^[A-Za-z]{2,22}\s[A-Za-z-']{3,22}$)/;
+var ck_name1 =/(^[0-9!@#$%^&*()_]{2,22}\s[0-9!@#$%^&*()_]{3,22}$)/;
+var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i; 
+var ck_password =  /^[A-Za-z0-9!@#$%^&*()_]{6,16}$/;
+var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+
+    function getAge(dateString) 
+{
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+    {
+        age--;
+    }
+    return age;
+}  
+/*
+phoneNumber = phoneNumber.replace(/\D/g,'');
+if (phoneNumber.length == 10) {
+    alert(phoneNumber + ' contains 10 digits');
+    }
+else {
+    alert(phoneNumber + ' does not contain 10 digits');
+    }  */  
+function validate(form){
+var name = form.uname.value;
+var dob1=form.dob.value;
+var email = form.email.value;
+var password = form.password.value;
+var cpassword1=form.cpassword.value;
+var phoneNumber=form.phno.value;
+var age1=getAge(dob1);
+var minlength=6;
+var maxlength=20;
+var errors = [];
+
+name = name.replace(/^\s+|\s+$/g,"") ;  // strip any leading or trailing spaces
+name = name.replace(/\s+/g," ");  // remove multiple intermediate spaces
+/*name = name.toLowerCase().replace(/\b[a-z]/g,function(w){
+    return w.toUpperCase()
+});  capitalise first letter of each name*/
+if (!ck_name.test(name)) {   // first and second names separated by a space, allow for hyphen and apostrophe
+/*alert ("You must enter your first name (not just your initial) and last name separated by a space");
+document.getElementById("fullname").focus();*/
+    if(!ck_name1.test(name)){
+        errors[errors.length] = "You must enter your first name and last name separated by a space having only characters";
+    }
+    else{
+    errors[errors.length] = "Your name should not contain numerals and special characters";
+    }
+}
+    /*
+ if (!ck_name.test(name)) {
+    errors[errors.length] = "Your valid Name .";
+ }*/
+if(age1<13 && age1>=0){
+    errors[errors.length] = "Minimum 13 years of age to Join us";
+}
+if(age1<0){
+    errors[errors.length] = "Invalid Date!!!";
+}
+if(age1>110){
+    errors[errors.length] = "Age limit exceeded...Invalid Date!!!";
+}
+    if (!ck_email.test(email)) {
+    errors[errors.length] = "You must enter a valid email address.";
+ }
+
+if(password!= "" && password==cpassword1) {
+            var re1 = /[0-9]/;
+            var re2 = /[a-z]/;
+            var re3 = /[A-Z]/;
+            var re4=/!@#$%^&*()_/;
+            if(!re1.test(password)){
+                if(!re2.test(password)){
+                    if(!re3.test(password)){
+                          if(!re4.test(password)){
+                            errors[errors.length] = "Your Password must have numbers,uppercase,lowercase and special characters";
+                            }
+                        else{
+                            errors[errors.length] = "Your Password must have numbers,uppercase,lowercase and special characters";
+                        }
+                    }
+                        else{
+                        errors[errors.length] = "Your Password must have numbers,uppercase,lowercase and special characters";             
+                        }
+                    }
+                    else{
+                        errors[errors.length] = "Your Password must have numbers,uppercase,lowercase and special characters";
+                    }
+                }
+    else{
+        errors[errors.length] = "Your Password must have numbers,uppercase,lowercase and special characters";
+            
+    }
+}
+    else{
+        errors[errors.length] = "Error: Please check that you've entered confirm password same as your password!";
+        }
+if(!phoneno.test(phoneNumber))  
+        {  
+        errors[errors.length] = "Invalid Phonenumber!!";
+        }  
+ 
+    
+if (errors.length > 0) {
+  reportErrors(errors);
+  return false;
+ }
+  return true;
+}
+    
+function reportErrors(errors){
+ var msg = "Please Enter Valid Data...\n";
+ for (var i = 0; i<errors.length; i++) {
+ var numError = i + 1;
+  msg += "\n" + numError + ". " + errors[i];
+}
+ alert(msg);
+}/*
+function myFunction() {
+    document.getElementById("login11").title = "The World's Largest Web Development Site";
+    return false;
+}*/
+</script>
+    </head>
+    <body id="bd">
+        <div id="contain-form">
+            <div id="content">
+                <header><b>Sign Up</b></header>
+                <br><br>
+                <form name="form" action="adduser" method="post" id="form1" onSubmit="return validate(this)">
+                Name:<input type="text" title="Name must contain between 3 to 40, including UPPER/lowercase." name="uname" id="login11" placeholder="Full Name" style="margin-left:38px;width:198px;height:20px" maxlength="40" minlength="3" autofocus  required><br><br>    
+            Gender:<input  type="radio" name="gender" value="Male" style="margin-left:28px" checked>Male <input  type="radio" name="gender" value="Female" style="margin-left:15px;" >Female<br><br>
+            DOB:<input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy" style="margin-left:45px;width:198px;height:20px" required><span> *</span><br><br>
+            Email-id:<input type="email" title="Email must not be blank and sholud be of proper Format" name="email"  id="email11" placeholder="abcd@xyz.com" style="margin-left:21.5px;width:200px;height:20px" required> <span>*</span><br><br>      
+            Password:<input type="password" title="Password must contain between 6 to 16 characters, including UPPER/lowercase and numbers." type="password" name="password" id="pwd1" placeholder="Password" style="margin-left:10px;width:200px;height:20px" maxlength="16" minlength="6" required> <span>*</span><br><br>     
+            Confirm <br>Password: <input type="password" title="Please enter the same Password as above." name="cpassword" id="pwd2" placeholder="Confirm Password" style="margin-left:07px;width:200px;height:20px;margin-bottom:5px" required> <span>*</span><br><br>
+            Country:
+                    <select  required="required" style="margin-left:22px;width:203px;height:25px">
+                        <option>--Select Country--</option>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                        <option>Nepal</option>
+                        <option>Sri Lanka</option>
+                    </select><span> *</span> 
+                    <br><br>
+            Profession:
+                    <select  required style="margin-left:03px;width:203px;height:25px" >
+                        <option>--Select Your Profession--</option>
+                        <option>Student</option>
+                        <option>Government Servant</option>
+                        <option>Private company Employee</option>
+                        <option>Businessman</option>
+                        <option>Other</option>
+                    </select><span> *</span> 
+                    <br><br>
+            Mobile No.:<input type="tel" name="phno" id="login11" placeholder="Phone Number" style="margin-left:7px;width:200px;height:20px"  required maxlength="10" minlength="10"><span> * </span><br><br><br> 
+                    <input type="reset"  id="reset1" style="float:right;margin-right:5px;margin-bottom:10px">
+                    <input type="submit"  id="submit1"  style="float:right;margin-right:10px;margin-bottom:20px">
+                    <br><br><br><br>
+                    <center style="color:azure;font-size:15px;font-family:monospace">* Fields are mandatory</center>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

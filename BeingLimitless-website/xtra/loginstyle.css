@@ -1,0 +1,43 @@
+#html{
+    -webkit-font-smoothing: antialiased;
+}
+
+#container{
+    margin-right: 20px;
+    margin-top: 150px;
+    margin-left:200px;
+    width:350px;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-right:thick  solid #000000;
+}
+
+#login11:-ms-input-placeholder{
+color:yellowgreen;
+text-color:black;
+}
+
+
+.container1
+{
+    width:200px;
+    height:500px;
+    visibility:hidden;
+    /*margin-left: 0px;
+    margin-right:20px;
+    margin-top: 0px;
+    margin-left:200px;
+    padding-bottom:10px;
+    padding-top:0px;
+    padding-left:0px;
+    padding-right:10px;*/
+}
+
+.container1 .container text-center1{
+    width:100px;
+    height:400px;
+    align-content: center;
+    
+} 

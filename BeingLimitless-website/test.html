@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="text/javascript" href="text.js">
+    <script src="test.js"></script>
+        <script>
+        $(document).ready(function(){
+                          $.('#formsubmit').click(function(){
+                                              $.post("test.jsp",(fname:$("#fname").val(),
+            surname:$('$surname').val()),function(data){
+                                                  $('#response').html(data);
+                                              }
+            );
+
+        });
+            });
+        </script>
+    </head>
+    <body>
+        <form id="formname">
+        <input type="text" id="fname">
+        <input type="text" id="surname">
+        <br><br><input type="button" value="Upvote" id="formsubmit"/>
+        <br><br><textarea id="response" style="width:50px;height:25px">0</textarea>
+        </form>
+            </body>
+
+</html>
