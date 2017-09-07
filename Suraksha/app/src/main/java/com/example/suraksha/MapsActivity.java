@@ -429,6 +429,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
             myAddress.setText("Canont get Address!");
         }
+	    /*if(mob1.empty()){getData();}
+	    else{
+	    //no call get Data}*/
         getData();
     }
     @Override
